@@ -30,6 +30,8 @@
 9. O que significa LTS na versão do software?
 > <strong>LTS</strong> significa apoio a longo prazo. Aqui, apoio significa que ao longo da vida de um lançamento há um compromisso de atualizar, corrigir e manter o software. Para um LTS, existe um ciclo de desenvolvimento mais curto, onde engenheiros e colaboradores acrescentam ao corpo da versão.
 
+10. O que é um Runtime?
+> <strong>Runtime</strong> descreve software/instruções que são executadas enquanto o programa está em execução, especialmente as instruções que não são escritas explicitamente, mas que são necessárias para a execução adequada do código.
 
 
 
