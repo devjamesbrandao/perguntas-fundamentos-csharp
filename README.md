@@ -33,6 +33,8 @@
 10. O que é um Runtime?
 > <strong>Runtime</strong> descreve software/instruções que são executadas enquanto o programa está em execução, especialmente as instruções que não são escritas explicitamente, mas que são necessárias para a execução adequada do código.
 
+11. O que é um SDK?
+> <strong>SDK</strong> significa kit de desenvolvimento de software ou <strong>devkit</strong> para abreviar. É um conjunto de ferramentas e programas de software utilizados pelos programadores para criar aplicações para plataformas específicas. As ferramentas SDK incluem uma gama de coisas, incluindo bibliotecas, documentação, amostras de código, processos e guias que os programadores podem utilizar e integrar nas suas próprias aplicações. Os SDK são concebidos para serem utilizados em plataformas ou linguagens de programação específicas.
 
 
 ### ` 🌐 Referências`
