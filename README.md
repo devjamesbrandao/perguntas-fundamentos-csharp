@@ -39,6 +39,9 @@
 12. O que é um CLI?
 > <strong>CLI</strong> significa <strong>Command Line Interface</strong> ou <strong>Interface de linha de comando</strong>. CLI é um programa de linha de comando que aceita a entrada de texto para executar funções do sistema operacional. Por exemplo, o gerenciador de pacotes <strong>NPM</strong> utiliza linha de comando para instalar componentes necessários ao desenvolvimento de software.
 
+13. Cite 3 tipos de projetos que temos no .NET?
+> <strong>Biblioteca de classes</strong>, <strong>Aplicativo Console</strong>, <strong>Aplicativo WEB ASP.NET Core</strong> e <strong>API WEB ASP.NET Core</strong>.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
