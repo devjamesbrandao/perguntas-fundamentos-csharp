@@ -45,6 +45,15 @@
 14. O que é uma Solution?
 > Uma <strong>solução</strong> uma espécie de container de trabalho que contém uma coleção de projetos, juntamente com informações sobre as dependências entre esses projetos.
 
+15. Qual comando para executar uma aplicação .NET?
+> dotnet run
+
+16. Qual comando para compilar uma aplicação .NET?
+> dotnet build
+
+17. Qual comando para publicar uma aplicação .NET?
+> dotnet publish
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
