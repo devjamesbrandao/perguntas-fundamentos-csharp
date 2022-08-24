@@ -60,6 +60,8 @@
 19. O que significa Debug?
 > <strong>Debug</strong> ou <strong>Depuração</strong> é o processo de detecção e remoção de erros existentes ou potenciais (também chamados de 'bugs') num código de software que pode causar o seu comportamento inesperado ou a sua queda. Para evitar o funcionamento incorrecto de um software ou sistema, a depuração é utilizada para encontrar e resolver bugs ou defeitos.
 
+20. Como executamos uma aplicação .NET em modo Debug?
+> No <strong>Visual Studio Code</strong> é necessário adicionar uma pasta chamada <strong>.vscode</strong>. Ela contém dois arquivos: <strong>launch.json</strong> e <strong>task.json</strong>. Esses dois arquivos são importantes para executar comandos como dotnet build e publish. Além disso, graças a eles conseguimos executar o debug da nossa aplicação. Para isso, depois de adicionar a pasta e os arquivos anteriormente mencionados, precisamos adicionar <strong>breakpoints</strong> nos trechos de códigos os quais queremos debugar. Feito isso, basta clicar em <strong>F5</strong>, assim o debug será executado. Já no caso do <strong>Visual Studio</strong>, o processo e mais simples, pois basta adicionar os <strong>breakpoints</strong> no código e, após isso, clicar em <strong>F5</strong>.
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
