@@ -54,6 +54,9 @@
 17. Qual comando para publicar uma aplicação .NET?
 > dotnet publish
 
+18. Qual nome do método principal de um Console App?
+> Main()
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
