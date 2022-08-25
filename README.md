@@ -66,6 +66,9 @@
 21. Qual a finalidade da pasta Properties?
 > A pasta <strong>Properties</strong> contém um arquivo chamado <strong>launchSettings.json</strong> que contém toda a informação necessária para iniciar a aplicação. Contém também os perfis através dos quais a aplicação pode ser executada, cada perfil é mapeado para um <strong>commandName</strong>, <strong>applicationUrl</strong> em que a aplicação é lançada, <strong>environmentVariables</strong>, etc.
 
+22. Qual a finalidade das pastas Bin e Obj?
+> O diretório <strong>obj</strong> é para ficheiros de objetos intermediários e outros ficheiros de dados transitórios que são gerados pelo compilador ou sistema de construção durante uma construção. O diretório <strong>bin</strong> é o diretório onde serão escritos os binários de saída final (e quaisquer dependências ou outros ficheiros destacáveis).
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
