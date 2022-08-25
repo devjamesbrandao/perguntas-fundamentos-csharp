@@ -84,6 +84,9 @@
 > - Enum;
 > - Delegate;
 
+25. Qual a finalidade do Using?
+> Em C#, a utilização da palavra-chave <strong>using</strong> tem dois objetivos: a primeira é a diretiva de utilização, que é utilizada para importar namespaces no topo de um arquivo de código. A segunda é a declaração de utilização. No C# 8, utilizar declarações <strong>using</strong> asseguram que as classes que implementam a interface IDisposable chamem o seu método de Dispose .
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
