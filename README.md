@@ -62,6 +62,10 @@
 
 20. Como executamos uma aplicação .NET em modo Debug?
 > No <strong>Visual Studio Code</strong> é necessário adicionar uma pasta chamada <strong>.vscode</strong>. Ela contém dois arquivos: <strong>launch.json</strong> e <strong>task.json</strong>. Esses dois arquivos são importantes para executar comandos como dotnet build e publish. Além disso, graças a eles conseguimos executar o debug da nossa aplicação. Para isso, depois de adicionar a pasta e os arquivos anteriormente mencionados, precisamos adicionar <strong>breakpoints</strong> nos trechos de códigos os quais queremos debugar. Feito isso, basta clicar em <strong>F5</strong>, assim o debug será executado. Já no caso do <strong>Visual Studio</strong>, o processo e mais simples, pois basta adicionar os <strong>breakpoints</strong> no código e, após isso, clicar em <strong>F5</strong>.
+
+21. Qual a finalidade da pasta Properties?
+> A pasta <strong>Properties</strong> contém um arquivo chamado <strong>launchSettings.json</strong> que contém toda a informação necessária para iniciar a aplicação. Contém também os perfis através dos quais a aplicação pode ser executada, cada perfil é mapeado para um <strong>commandName</strong>, <strong>applicationUrl</strong> em que a aplicação é lançada, <strong>environmentVariables</strong>, etc.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
