@@ -69,7 +69,16 @@
 22. Qual a finalidade das pastas Bin e Obj?
 > O diretório <strong>obj</strong> é para ficheiros de objetos intermediários e outros ficheiros de dados transitórios que são gerados pelo compilador ou sistema de construção durante uma construção. O diretório <strong>bin</strong> é o diretório onde serão escritos os binários de saída final (e quaisquer dependências ou outros ficheiros destacáveis).
 
+23. Quais partes compoe um programa em C#?
+> A estrutura de um programa em C# pode ser dividida em um ou mais arquivos contendo os seguintes elementos:
+> - Namespaces;
+> - Tipos (classes, estruturas, interfaces, delegações, enums);
+> - Membros (constantes, campos, métodos, propriedades, indexadores, eventos, operadores, construtores);
+> - Outros (declarações, comentários, instruções).
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
 - <p> Por que utilizar C#?: https://balta.io/blog/csharp</p>
+
+- <p>Estrutura de um Programa em C#: https://andrielleazevedo.wordpress.com/2011/12/10/estrutura-de-um-programa-em-c/</p>
