@@ -76,6 +76,14 @@
 > - Membros (constantes, campos, métodos, propriedades, indexadores, eventos, operadores, construtores);
 > - Outros (declarações, comentários, instruções).
 
+24. O que são Namespaces?
+> A palavra-chave <strong>namespace</strong> é utilizada para declarar um âmbito que contém um conjunto de objetos relacionados. Pode usar um namespace para organizar elementos de código e para criar tipos únicos a nível global da aplicação. Dentro de um espaço de nomes, pode declarar zero ou mais dos seguintes tipos: 
+> - classes;
+> - Interfaces;
+> - Structs;
+> - Enum;
+> - Delegate;
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
