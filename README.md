@@ -97,7 +97,7 @@
 > No C#, há 3 tipos de comentários: comentário de linha única (//), comentário de várias linhas (/* */) e comentários em XML (///).
 
 29. O que são tipos primitivos?
-> Os mais famosos tipos primitivos são: int, object, short, char, float, double, char, bool. Eles são chamados de primitivos porque eles são os principais built-in types (fazem parte do C# nativamente), e podem ser usados para construir outros tipos de dados (structs).
+> Os mais famosos tipos primitivos são: <strong>int, object, short, char, float, double, char, bool</strong>. Eles são chamados de primitivos porque eles são os principais <strong>built-in types</strong> (fazem parte do C# nativamente), e podem ser usados para construir outros tipos de dados (structs).
 
 30. Qual tipo base no .NET?
 > A classe <strong>Object</strong> é a base para todas as classes do .NET. Ela está presente no namespace <strong>System</strong>.
