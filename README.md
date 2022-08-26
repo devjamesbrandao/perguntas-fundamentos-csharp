@@ -87,6 +87,9 @@
 25. Qual a finalidade do Using?
 > Em C#, a utilização da palavra-chave <strong>using</strong> tem dois objetivos: a primeira é a diretiva de utilização, que é utilizada para importar namespaces no topo de um arquivo de código. A segunda é a declaração de utilização. No C# 8, utilizar declarações <strong>using</strong> asseguram que as classes que implementam a interface IDisposable chamem o seu método de Dispose .
 
+26. Qual a diferença entre uma variável e uma constante?
+> Uma <strong>variável</strong> é como um recipiente que contém os valores ou dados de um determinado tipo de dados que ajudam a executar o programa. O valor de uma variável <strong>pode mudar</strong> dependendo das condições ou informações dadas no tempo de execução do programa. Já a <strong>constante</strong> é um valor fixo cujo valor <strong>não pode ser alterado</strong> durante a execução do programa ou uma vez que o valor é definido.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
