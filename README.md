@@ -96,6 +96,9 @@
 28. Quais formas temos de comentar código em C#?
 > No C#, há 3 tipos de comentários: comentário de linha única (//), comentário de várias linhas (/* */) e comentários em XML (///).
 
+29. O que são tipos primitivos?
+> Os mais famosos tipos primitivos são: int, object, short, char, float, double, char, bool. Eles são chamados de primitivos porque eles são os principais built-in types (fazem parte do C# nativamente), e podem ser usados para construir outros tipos de dados (structs).
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
