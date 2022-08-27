@@ -111,6 +111,9 @@
 33. Qual a diferença entre char e string?
 > A principal diferença entre <strong>Char</strong> e <strong>String</strong> é que char se refere a uma única letra, número, espaço, sinal de pontuação ou um símbolo que pode ser representado utilizando um caractere enquanto string se refere a um conjunto de caracteres.
 
+34. Qual valor padrão do tipo char?
+> O valor por padrão do tipo char é <strong>\0</strong> , ou seja, <strong>U+0000</strong>.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
