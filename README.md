@@ -129,6 +129,9 @@ object nome;
 36. O que são tipos nulos?
 > O tipo <strong>Nullable</strong> ou <strong>tipo nulo</strong> permite atribuir um valor nulo a uma variável.
 
+37. O que são alias? Cite 3 exemplos
+> <strong>Alias</strong> tem a função de evitar ambiguidades e facilitar a importação de namespaces e structs. O <strong>char</strong> é um alias para o struct <strong>System.Char</strong>. <strong>int</strong> é um alias para o struct <strong>Int32</strong>. <strong>string</strong> é um alias para <strong>System.String</strong>.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
