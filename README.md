@@ -141,6 +141,17 @@ int num = 2147483647;
 long bigNum = num;
 ```
 
+39. O que são conversões explícitas?
+> <strong>Conversões explícitas (casts)</strong> requerem uma <strong>cast expression</strong>. O <strong>Casting</strong> é necessário quando a informação pode ser perdida na conversão, ou quando a conversão pode não ser bem sucedida por outras razões. Exemplo:
+```
+double x = 1234.7;
+
+int a;
+
+// Cast double para int utilizando expressão cast (o int antes da variável x é o casting)
+a = (int)x;
+```
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
