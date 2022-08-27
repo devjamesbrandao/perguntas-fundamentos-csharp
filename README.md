@@ -102,6 +102,12 @@
 30. Qual tipo base no .NET?
 > A classe <strong>Object</strong> é a base para todas as classes do .NET. Ela está presente no namespace <strong>System</strong>.
 
+31. Dado um var de um número real, qual tipo seria o var?
+> var seria do tipo Double
+
+32. Dado um var de um número inteiro, qual tipo seria o var?
+> var seria do tipo Int32
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
