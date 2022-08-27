@@ -108,6 +108,9 @@
 32. Dado um var de um número inteiro, qual tipo seria o var?
 > var seria do tipo Int32
 
+33. Qual a diferença entre char e string?
+> A principal diferença entre <string>Char</string> e <strong>String</strong> é que char se refere a uma única letra, número, espaço, sinal de pontuação ou um símbolo que pode ser representado utilizando um caractere enquanto string se refere a um conjunto de caracteres.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
