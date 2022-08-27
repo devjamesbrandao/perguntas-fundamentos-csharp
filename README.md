@@ -132,6 +132,15 @@ object nome;
 37. O que são alias? Cite 3 exemplos
 > <strong>Alias</strong> tem a função de evitar ambiguidades e facilitar a importação de namespaces e structs. O <strong>char</strong> é um alias para o struct <strong>System.Char</strong>. <strong>int</strong> é um alias para o struct <strong>Int32</strong>. <strong>string</strong> é um alias para <strong>System.String</strong>.
 
+38. O que são conversões implícitas?
+> <strong>Conversões implícitas</strong> não precisam de sintaxe especial porque a conversão é sempre bem sucedida e nenhum dado será perdido. Exemplo:
+```
+// O tipo int possui 32 bits
+int num = 2147483647;
+// O tipo long possui 64 bits. Portanto, é possível realizar a conversão implícita de int para long sem perca de dados
+long bigNum = num;
+```
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
