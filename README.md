@@ -125,6 +125,10 @@ var nome;
 // O compilador permite tranquilamente
 object nome;
 ```
+
+36. O que são tipos nulos?
+> O tipo <strong>Nullable</strong> ou <strong>tipo nulo</strong> permite atribuir um valor nulo a uma variável.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
