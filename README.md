@@ -114,6 +114,17 @@
 34. Qual valor padrão do tipo char?
 > O valor por padrão do tipo char é <strong>\0</strong> , ou seja, <strong>U+0000</strong>.
 
+35. Qual a diferença entre var e object?
+> Tudo é <strong>object</strong> porque é um tipo de base para cada tipo no .NET. Por exemplo, <strong>int</strong> herda de <strong>object</strong>. O <strong>var</strong> é usado para definição implícita do tipo das variáveis, uma vez que o compilador se encarrega de descobrir o tipo da variável. Além disso, não é possível iniciar uma variável com <strong>var</strong> e não atribuir valor a ela, exemplo: 
+```
+// Compilador lança um erro
+var nome; 
+```
+> Entretanto, o compilador permite você definir uma variável com o tipo <strong>object</strong> e não atribuir valor a ela, exemplo:
+```
+// O compilador permite tranquilamente
+object nome;
+```
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
