@@ -166,7 +166,7 @@ a = (int)x;
 > - Decremento: --
 
 42. O que são operadores de atribuição e quais temos no C#?
-> Os operadores de atribuição são utilizados para atribuir valores a variáveis. São eles:
+> Os <strong>operadores de atribuição</strong> são utilizados para atribuir valores a variáveis. São eles:
 > - = 
 > - += 
 > - -=
@@ -178,6 +178,15 @@ a = (int)x;
 > - ^=
 > - \>\>=
 > - <<=
+
+43. O que são operadores de comparação e quais temos no C#?
+> Os <strong>operadores de comparação</strong> são utilizados para comparar dois valores. São eles:
+> - ==
+> - !=
+> - >
+> - <
+> - >=
+> - <=
 
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
