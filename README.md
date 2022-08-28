@@ -165,6 +165,20 @@ a = (int)x;
 > - Incremento: ++
 > - Decremento: --
 
+42. O que são operadores de atribuição e quais temos no C#?
+> Os operadores de atribuição são utilizados para atribuir valores a variáveis. São eles:
+> - = 
+> - += 
+> - -=
+> - *=
+> - /=
+> - %=
+> - &=
+> - |=
+> - ^=
+> - \>\>=
+> - <<=
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
