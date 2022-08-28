@@ -183,10 +183,16 @@ a = (int)x;
 > Os <strong>operadores de comparação</strong> são utilizados para comparar dois valores. São eles:
 > - ==
 > - !=
-> - >
+> - \>
 > - <
-> - >=
+> - \>=
 > - <=
+
+44. O que são operadores lógicos e quais temos no C#?
+> Os <strong>operadores lógicos</strong> são utilizados para determinar a operação lógica entre variáveis ou valores. São eles:
+> Operação lógica AND: &&
+> Operação lógica OR: ||
+> Operação lógica NOT: !
 
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
