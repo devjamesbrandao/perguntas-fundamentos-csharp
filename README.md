@@ -194,6 +194,9 @@ a = (int)x;
 > Operação lógica OR: ||
 > Operação lógica NOT: !
 
+45. Cite duas estruturas condicionais que temos no C#
+> `if()` e `switch()`
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
