@@ -197,6 +197,9 @@ a = (int)x;
 45. Cite duas estruturas condicionais que temos no C#
 > `if()` e `switch()`
 
+46. Cite duas estruturas de repetição que temos no C#
+> `for()` e `while()`
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
