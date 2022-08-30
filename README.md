@@ -221,6 +221,15 @@ public List<Produto> ObterTodosOsCandidadosAPresidente()
 }
 ```
 
+50. Como tornamos um parâmetro opcional no C#?
+> Devemos adicionar um valor padrão no parâmetro do método. Exemplo:
+```
+public void AumentarSalarioDoDev(decimal valorAumento = 2000)
+{
+  SalarioDoDev += valorAumento;
+}
+```
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
