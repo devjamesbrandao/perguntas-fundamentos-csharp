@@ -212,6 +212,15 @@ public void MetodoVoid()
 }
 ```
 
+49. Podemos ter métodos sem parâmetros no C#?
+> Sim, tranquilamente. Exemplo:
+```
+public List<Produto> ObterTodosOsCandidadosAPresidente()
+{
+  return new List<string>(6){ "Jair Bolsonaro", "Lula", "Ciro Gomes", "Simone Tebet", "Luiz Felipe d’Avila", "Soraya Thronicke" };
+}
+```
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
