@@ -203,6 +203,15 @@ a = (int)x;
 47. Qual a diferença entre while e do/while?
 > Enquanto o laço de repetição <strong>while</strong> verifica primeiro a condição e depois executa a(s) declaração(ões), o laço <strong>do while</strong> executa a(s) declaração(ões) pelo menos uma vez, depois verifica a condição.
 
+48. Como definimos que um método não retorna valor algum?
+> Adicionamos a palavra <strong>void</strong> no retorno do método. Exemplo:
+```
+public void MetodoVoid()
+{
+  Console.WriteLine("Hola, compañeros soy un método sin retorno");
+}
+```
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
