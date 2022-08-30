@@ -200,6 +200,9 @@ a = (int)x;
 46. Cite duas estruturas de repetição que temos no C#
 > `for()` e `while()`
 
+47. Qual a diferença entre while e do/while?
+> Enquanto o laço de repetição <strong>while</strong> verifica primeiro a condição e depois executa a(s) declaração(ões), o laço <strong>do while</strong> executa a(s) declaração(ões) pelo menos uma vez, depois verifica a condição.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
