@@ -251,6 +251,9 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 57. O que é um GUID?
 > <strong>GUID</strong> significa <strong>Global Unique Identifier (Identificador Único Global)</strong>. Um GUID é um inteiro de 128 bits (16 bytes) que você pode usar em todos os computadores e redes onde quer que um identificador único seja necessário.
 
+58. O que é interpolação de String?
+> A interpolação de string em C# é um método de concatenação, formatação e manipulação de string.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
