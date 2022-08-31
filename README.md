@@ -242,6 +242,9 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 54. Onde são armazenados os tipos de referência?
 > As variáveis do <strong>tipo referência</strong> são armazenadas na memória <strong>heap</strong>.
 
+55. O que são Structs?
+> Em C#, <strong>struct</strong> é o tipo de dado de valor que representa as estruturas de dados. Pode conter um construtor parametrizado, construtor estático, constantes, campos, métodos, propriedades, indexadores, operadores, eventos e tipos aninhados.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
