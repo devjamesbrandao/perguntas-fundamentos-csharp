@@ -245,6 +245,9 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 55. O que são Structs?
 > Em C#, <strong>struct</strong> é o tipo de dado de valor que representa as estruturas de dados. Pode conter um construtor parametrizado, construtor estático, constantes, campos, métodos, propriedades, indexadores, operadores, eventos e tipos aninhados.
 
+56. O que são enumeradores?
+> Na linguagem C#, <strong>enum</strong> é um tipo de valor definido pelo usuário usado para representar uma lista de constantes inteiras nomeadas. Ele é criado usando a palavra-chave <strong>enum</strong> dentro de uma classe, estrutura ou espaço de nomes. Ele melhora a legibilidade, a manutenção e reduz a complexidade de um programa.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
