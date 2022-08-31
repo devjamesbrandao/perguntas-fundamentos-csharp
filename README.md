@@ -230,6 +230,9 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 }
 ```
 
+51. O que são heap e stack?
+> São áreas da memória RAM onde o processador busca dados da aplicação.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
