@@ -257,6 +257,9 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 59. Qual a finalidade do método CompareTo?
 > O método <strong>Int16.CompareTo()</strong> em C# é usado para comparar esta instância com um objeto especificado ou outra instância Int16 e retorna um inteiro que indica se o valor desta instância é menor, igual ou maior que o valor do objeto especificado ou da outra instância Int16.
 
+60. Qual a finalidade do método Contains?
+> O método Contains() em C# é usado para retornar um valor indicando se uma substring específica ocorre dentro de outra string.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
