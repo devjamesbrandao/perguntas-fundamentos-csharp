@@ -239,6 +239,8 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
+- <p> C#: Tipos de Valor e Tipos de Referência: https://calegari.dev/posts/c-sharp-tipos-de-valor-e-referencia/#:~:text=Em%20C%23%2C%20quando%20voc%C3%AA%20cria,valor%20e%20tipos%20de%20refer%C3%AAncia</p>
+
 - <p> Por que utilizar C#?: https://balta.io/blog/csharp</p>
 
 - <p>Estrutura de um Programa em C#: https://andrielleazevedo.wordpress.com/2011/12/10/estrutura-de-um-programa-em-c/</p>
