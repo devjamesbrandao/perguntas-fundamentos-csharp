@@ -239,6 +239,9 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 53. Onde são armazenados os tipos de valor?
 > As variáveis do <strong>tipo valor</strong> são armazenadas na memória <strong>stack</strong>.
 
+54. Onde são armazenados os tipos de referência?
+> As variáveis do <strong>tipo referência</strong> são armazenadas na memória <strong>heap</strong>.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
