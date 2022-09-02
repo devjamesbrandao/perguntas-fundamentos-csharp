@@ -252,7 +252,13 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 > <strong>GUID</strong> significa <strong>Global Unique Identifier (Identificador Único Global)</strong>. Um GUID é um inteiro de 32 bits (16 bytes) que você pode usar em todos os computadores e redes onde quer que um identificador único seja necessário. Exemplo de GUID no C#: <strong>0f8fad5b-d9cb-469f-a165-70867728950e</strong>
 
 58. O que é interpolação de String?
-> A interpolação de string em C# é um método de concatenação, formatação e manipulação de string.
+> A interpolação de string em C# é um método de concatenação, formatação e manipulação de string. Exemplo:
+```
+var estadosBrasileiros = 27;
+
+Console.WriteLine($"O Brasil é composto por {estadosBrasileiros} estados");
+
+```
 
 59. Qual a finalidade do método CompareTo?
 > O método <strong>Int16.CompareTo()</strong> em C# é usado para comparar esta instância com um objeto especificado ou outra instância Int16 e retorna um inteiro que indica se o valor desta instância é menor, igual ou maior que o valor do objeto especificado ou da outra instância Int16.
