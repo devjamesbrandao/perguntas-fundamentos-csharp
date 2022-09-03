@@ -290,6 +290,9 @@ else
 64. Qual a finalidade do método ToLower e ToUpper?
 > O método <strong>ToLower()</strong> coloca os caracteres de uma string ou char em caixa baixa. Já o método <strong>ToUpper</strong> colocar os caracteres de uma string ou char em caixa alta.
 
+65. Qual a finalidade do método Insert?
+> O método <strong>Insert()</strong> em C# é usado para retornar uma nova string na qual uma string especificada é inserida em uma posição de índice especificada neste caso.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
