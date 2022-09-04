@@ -316,6 +316,10 @@ Console.WriteLine("A palavra " + palavra + " possui " + tamanhoPalavra + "letras
 71. Qual a finalidade do método Trim?
 > O método <strong>String Trim()</strong>, geralmente, é utilizado para remover os espaçamentos em branco no início e no fim da string.
 
+72. O que é StringBuilder e quando devemos utilizar?
+> Em c#, <strong>StringBuilder</strong> é uma classe que é útil para representar uma sequência <strong>mutável</strong> de caracteres, e é um objeto do namespace <strong>System.Text</strong>. Em c#, tanto <strong>string</strong> quanto <strong>StringBuilder</strong> representarão uma sequência de caracteres e executarão o mesmo tipo de operações, mas a única diferença é que as <strong>strings</strong> são <strong>imutáveis</strong>, e <strong>StringBuilder</strong> é <strong>mutável</strong>.<br />
+> Geralmente, em c# a <strong>string</strong> não pode ser modificado uma vez que é criada. Se alguma alteração for feita na string, como adicionar ou modificar um valor existente, ela simplesmente descartará a instância antiga na memória e criará uma nova instância para manter o novo valor. Se fizermos modificações repetidas no objeto string, isso afetará o desempenho do aplicativo. Para resolver esse problema, o c# introduziu uma alternativa chamada <strong>StringBuilder</strong>, que é uma classe de string <strong>mutável</strong>. Mutabilidade significa que uma vez criada uma instância da classe, a mesma instância será usada para executar quaisquer operações como inserir, appending, remover ou substituir os caracteres em vez de criar uma nova instância para cada vez.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
