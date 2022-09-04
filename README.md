@@ -310,6 +310,9 @@ Console.WriteLine("A palavra " + palavra + " possui " + tamanhoPalavra + "letras
 69. Qual a finalidade do método Split?
 > Em C#, <strong>Split()</strong> é um método de classe de string. O método <strong>Split()</strong> retorna um conjunto de string geradas pela divisão da string original separada pelos delimitadores passados como um parâmetro no método Split(). Os delimitadores podem ser um caractere ou um array de caracteres ou um array de cadeias de caracteres.
 
+70. Qual a finalidade do método Substring?
+> O método <strong>Substring()</strong> em C# é usado para recuperar um substring da string atual, ou seja, retorna um "pedaço" da string atual. O substring começa em uma posição de caracteres especificada e continua até o final da string.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
