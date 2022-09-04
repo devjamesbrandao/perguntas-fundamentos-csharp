@@ -296,6 +296,9 @@ else
 66. Qual a finalidade do método Length?
 > <strong>String Length</strong> em C# retorna o número de caracteres de uma string.
 
+67. Qual a finalidade do método Remove?
+> No C#, o método <strong>Remove()</strong> é um método String. Ele é usado para remover todos os caracteres da posição especificada de uma string. Se o comprimento não for especificado, então ele removerá todos os caracteres após a posição especificada. Além disso, o método Remove() também pode ser utilizado para remover elementos de uma lista.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
