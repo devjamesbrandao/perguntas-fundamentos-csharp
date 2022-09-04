@@ -293,6 +293,9 @@ else
 65. Qual a finalidade do método Insert?
 > O método <strong>Insert()</strong> em C# é usado para retornar uma nova string na qual uma string especificada é inserida em uma posição de índice especificada neste caso.
 
+66. Qual a finalidade do método Length?
+> <strong>String Length</strong> em C# retorna o número de caracteres de uma string.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
