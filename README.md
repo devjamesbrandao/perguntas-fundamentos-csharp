@@ -313,6 +313,9 @@ Console.WriteLine("A palavra " + palavra + " possui " + tamanhoPalavra + "letras
 70. Qual a finalidade do método Substring?
 > O método <strong>Substring()</strong> em C# é usado para recuperar um substring da string atual, ou seja, retorna um "pedaço" da string atual. O substring começa em uma posição de caracteres especificada e continua até o final da string.
 
+71. Qual a finalidade do método Trim?
+> O método <strong>String Trim()</strong>, geralmente, é utilizado para remover os espaçamentos em branco no início e no fim da string.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
