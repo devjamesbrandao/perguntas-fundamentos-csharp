@@ -307,6 +307,9 @@ Console.WriteLine("A palavra " + palavra + " possui " + tamanhoPalavra + "letras
 68. Qual a finalidade do método Replace?
 > Em C#, o método <strong>Replace()</strong> é um método de string. Este método é usado para substituir todos os caracteres Unicode especificados ou string especificada do objeto string atual e retorna uma nova string modificada. Este método pode ser sobrecarregado ao passar argumentos para ele.
 
+69. Qual a finalidade do método Split?
+> Em C#, <strong>Split()</strong> é um método de classe de string. O método <strong>Split()</strong> retorna um conjunto de string geradas pela divisão da string original separada pelos delimitadores passados como um parâmetro no método Split(). Os delimitadores podem ser um caractere ou um array de caracteres ou um array de cadeias de caracteres.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
