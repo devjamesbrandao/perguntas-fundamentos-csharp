@@ -215,7 +215,7 @@ public void MetodoVoid()
 49. Podemos ter métodos sem parâmetros no C#?
 > Sim, tranquilamente. Exemplo:
 ```
-public List<Produto> ObterTodosOsCandidadosAPresidente()
+public List<string> ObterTodosOsCandidadosAPresidente()
 {
   return new List<string>(6){ "Jair Bolsonaro", "Lula", "Ciro Gomes", "Simone Tebet", "Luiz Felipe d’Avila", "Soraya Thronicke" };
 }
@@ -231,7 +231,7 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 ```
 
 51. O que são heap e stack?
-> São áreas da memória RAM onde o processador busca dados da aplicação.
+> São <strong>áreas da memória RAM</strong> onde o processador busca dados da aplicação.
 
 52. O que são tipos de valor e tipos de referência?
 > Ao atribuir um valor a uma variável que seja do <strong>tipo de valor</strong>, você está armazenando uma instância desse tipo na memória. Ao atribuir essa variável a uma outra variável desse mesmo tipo, acontece uma cópia do valor. Diferentemente das variáveis de tipo de valor, ao iniciar uma variável do <strong>tipo de referência</strong> além de ser alocado um espaço na memória para armazenar o conteúdo atribuído, a variável iniciada é armazenada em um outro espaço de memória, onde existe uma referência para a primeira posição de memória do conteúdo. Isso significa que ao atribuir uma variável do tipo de referência a outra, apenas o valor da referência é copiado.
