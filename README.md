@@ -326,6 +326,11 @@ Console.WriteLine("A palavra " + palavra + " possui " + tamanhoPalavra + "letras
 74. O que é o DateTime?
 > O <strong>DateTime</strong> no C# é um tipo de dados <strong>struct</strong>. Com isto sabemos que ele é composto por outros tipos e métodos, além de ser iniciado com um valor padrão. O <strong>DateTime</strong> ajuda o desenvolvedor a descobrir mais informações sobre Data e Hora como obter mês, dia, ano, dia da semana. Também ajuda a encontrar diferença de data, adicionar número de dias a uma data, etc.
 
+75. Como obtemos a data de hoje no C#?
+```
+var dataDeHoje = DateTime.Now();
+```
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
