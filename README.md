@@ -323,6 +323,9 @@ Console.WriteLine("A palavra " + palavra + " possui " + tamanhoPalavra + "letras
 73. O que é Regex e quando devemos utilizar?
 > Em C#, <strong>Expressão Regular</strong> é um padrão que é usado para analisar e verificar se o texto de entrada dado está combinando com o padrão dado ou não. Em C#, as Expressões Regulares são geralmente chamadas de C# <strong>Regex</strong>. O .Net Framework fornece um mecanismo de expressão regular que permite a correspondência do padrão. Os padrões podem consistir de quaisquer caracteres literais, operadores ou construtores. 
 
+74. O que é o DateTime?
+> O <strong>DateTime</strong> no C# é um tipo de dados <strong>struct</strong>. Com isto sabemos que ele é composto por outros tipos e métodos, além de ser iniciado com um valor padrão. O <strong>DateTime</strong> ajuda o desenvolvedor a descobrir mais informações sobre Data e Hora como obter mês, dia, ano, dia da semana. Também ajuda a encontrar diferença de data, adicionar número de dias a uma data, etc.
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
