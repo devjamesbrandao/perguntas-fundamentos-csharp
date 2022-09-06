@@ -331,6 +331,11 @@ Console.WriteLine("A palavra " + palavra + " possui " + tamanhoPalavra + "letras
 var dataDeHoje = DateTime.Now();
 ```
 
+76. Como convertemos uma data para String?
+> Podemos utilizar o método <string>.ToString()</string> para converter um <string>DateTime</string> para string.
+
+
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
