@@ -332,9 +332,13 @@ var dataDeHoje = DateTime.Now();
 ```
 
 76. Como convertemos uma data para String?
-> Podemos utilizar o método <string>.ToString()</string> para converter um <string>DateTime</string> para string.
+> Podemos utilizar o método <strong>.ToString()</strong> para converter um <strong>DateTime</strong> para string. Exemplo:
+```
+var data = DateTime.Now.ToString();
+```
 
-
+77. Como comparamos duas datas em C#?
+> Podemos utilizar o método <strong>DateTime.Compare()</strong> para comparar duas datas. Esse método retorna um valor inteiro menor que zero se a data1 é menor que a data2; um valor igual a zero se a data1 for igual a data2; e um valor maior que zero se a data1 for maior que a data2. Além disso, também podemos utilizar os  operadores de comparação para comparar duas datas.
 
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
