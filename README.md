@@ -352,6 +352,11 @@ var mes = DateTime.Today.Month;
 var dia = DateTime.Today.Day;
 ```
 
+79. Como podemos obter o último dia do mês no C#?
+```
+var ultimoDiaDoMes = DateTime.DaysInMonth(2022, 09);
+```
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
