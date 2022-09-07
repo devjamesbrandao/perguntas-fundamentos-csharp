@@ -357,6 +357,9 @@ var dia = DateTime.Today.Day;
 var ultimoDiaDoMes = DateTime.DaysInMonth(2022, 09);
 ```
 
+80. Podemos criar datas nulas?
+> Sim
+
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
 
