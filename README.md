@@ -402,12 +402,12 @@ TimeSpan ts2 = new TimeSpan(1, 0, 0, 0); // 1 dia
 > <strong>System.Math.Floor</strong> recebe como parâmetro um número do tipo Double e retorna o valor arredondado para o maior número entre parte inteira do número e o número. Assim Ceiling(1.1) irá retornar 2. Faz um arredondamento para 'cima'.
 
 87. Qual a diferença entre List e IList?
-> A principal diferença entre List e IList em C# é que List é uma classe que representa uma lista de objetos que podem ser acessados por índice enquanto IList é uma interface que representa uma coleção de objetos que podem ser acessados por índice. A interface IList é implementada a partir de duas interfaces, são elas ICollection e IEnumerable.
+> A principal diferença entre <strong>List<T></strong> e <strong>IList<T></strong> em C# é que List é uma classe que representa uma lista de objetos que podem ser acessados por índice enquanto IList é uma interface que representa uma coleção de objetos que podem ser acessados por índice. A interface IList é implementada a partir de duas interfaces, são elas ICollection e IEnumerable.
 
 > List e IList são utilizados para denotar um conjunto de objetos. Podem armazenar objetos de inteiros, string, etc. Existem métodos para inserir, remover elementos, pesquisar e ordenar elementos de uma Lista ou Lista IList. A maior diferença entre List e IList é que List é uma classe concreta e IList é uma interface. Globalmente, List é um tipo concreto que implementa a interface IList.
 
 88. Qual a finalidade do método Add e AddRange em uma lista?
-> Add() é utilizado para adicionar um elemento na lista. AddRange() é utilizado para adicionar uma gama de elementos (múltiplos elementos) de uma só vez na lista.
+> <strong>Add()</strong> é utilizado para adicionar um elemento na lista. <strong>AddRange()</strong> é utilizado para adicionar uma gama de elementos (múltiplos elementos) de uma só vez na lista.
 ```
 // Exemplo Add()
 List<int> numeros = new List<int>();
@@ -422,16 +422,51 @@ var maioresCidadesDoTocantins = new List<string>();
 maioresCidadesDoTocantins.AddRange(cidades);
 ```
 89. Qual a finalidade do método Clear em uma lista?
-> O método Clear é utilizado para remover todos os itens da lista e as propriedades de capacidade e contagem são então exibidas.
+> O método <strong>Clear()</strong> é utilizado para remover todos os itens da lista e as propriedades de capacidade e contagem são então exibidas.
+```
+// criar lista de strings
+List<string> times = new List<string>();
+times.Add("Corinthians");
+times.Add("Flamengo");
+times.Add("Palmeiras");
+  
+// removendo todos os elementos da lista  
+times.Clear();  
+```  
 
 90. Qual a finalidade do método Contains em uma lista?
-> O método Contains verifica se o item especificado já existe na Lista C#. A classe List<T> do C# fornece métodos e propriedades para criar uma lista de objetos (classes). O método Contains verifica se o item especificado já existe na Lista.
+> O método <strong>Contains()</strong> verifica se o item especificado já existe na Lista C#. 
+```
+// criando lista de animais
+var animais = new List<string>();
+animais.Add("Gato");
+animais.Add("Cachorro");
+animais.Add("Papagaio");
+
+// buscando elemento
+if (animais.Contains("Gato"))
+{
+    Console.WriteLine("Gato foi encontrado!");
+}
+```
 
 91. Qual a finalidade do método CopyTo em uma lista?
-> Copia toda a List<T> para uma matriz unidimensional compatível, começando no início da matriz de destino.
+> Copia toda a <strong>List<T></strong> para uma matriz unidimensional compatível, começando no início da matriz de destino.
+```
+var lista = new List<int>() { 10, 20, 30 };
+int[] array = new int[5];
+
+lista.CopyTo(array, 2); // CopyTo(array onde a lista será inserida, posição inicial)
+Console.WriteLine("Lista:  " + string.Join(",", lista));
+Console.WriteLine("Array: " + string.Join(",", array));
+  
+// SAÍDA
+LIST:  10,20,30
+ARRAY: 0,0,10,20,30
+```  
 
 92. Qual a finalidade do método Exists em uma lista?
-> O método Exists determina se uma lista contém elementos que correspondem ao predicado especificado.
+> O método <strong>Exists()</strong> funciona apenas com <strong>List<T></strong> e recebe um <strong>Predicate<T></strong> como parâmetro - isso permite que sejam feitas duas ou mais validações. <strong>Ex.: lista.Exists(x => x == 1 || x == 2);</strong>
 
 93. Qual a finalidade do método Find e FindAll em uma lista?
 > O método Find devolve o primeiro elemento que corresponde ao predicado dado. O método FindAll recupera todos os elementos que correspondem às condições definidas pelo predicado especificado.
