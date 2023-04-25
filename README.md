@@ -488,10 +488,10 @@ List<T>.RemoveAll(Predicate<T>) é utilizado para remover todos os elementos que
 Quando chama RemoveAt para remover um item, os restantes itens da lista são renumerados para substituir o item removido. Por exemplo, se remover o item no índice 3, o item no índice 4 é movido para a posição 3. Além disso, o número de itens na lista (conforme representado pela propriedade Count) é reduzido em 1.
 
 98. Qual a finalidade do método Reverse em uma lista?
-> Reverse() Inverte a ordem dos elementos em toda a List<T>.
+> O método <strong>Reverse()</strong> inverte a ordem dos elementos em toda a List<T>. 
 
 99. Qual a finalidade do método Sort em uma lista?
-> O método Sort ordena os números inteiros por ordem crescente, enquanto o método Reverse ordena por ordem decrescente
+> O método <strong>Sort()</strong> ordena os números inteiros por ordem crescente, enquanto o método Reverse ordena por ordem decrescente
 
 100. Qual a finalidade do método ToArray em uma lista?
 > Este método copia os itens da Lista para uma nova matriz e devolve a matriz a quem a chamou.
@@ -509,20 +509,20 @@ Quando chama RemoveAt para remover um item, os restantes itens da lista são ren
 > A cláusula where é utilizada numa expressão de consulta para especificar quais os elementos da fonte de dados que serão devolvidos na expressão de consulta. Aplica uma condição booleana (predicado) a cada elemento de origem (referenciado pela variável de intervalo) e devolve aqueles para os quais a condição especificada é verdadeira.
 
 105. Qual a finalidade do método First em uma lista?
-> O método First() do LINQ devolve o primeiro elemento da estrutura de dados especificada.
+> O método .First() do LINQ devolve o primeiro elemento da estrutura de dados especificada.
 
 106. Qual a finalidade do método OrderBy em uma lista?
-> A cláusula orderby faz com que a sequência ou subsequência (grupo) devolvida seja ordenada por ordem ascendente ou descendente.
+> A cláusula .OrderBy() faz com que a sequência ou subsequência (grupo) devolvida seja ordenada por ordem ascendente ou descendente.
 
 107. Qual a finalidade do método Select em uma lista?
-> O método Select() invoca o selector delegado fornecido em cada elemento da sequência IEnumerable<T> de origem e devolve uma nova sequência IEnumerable<T> de resultado que contém o resultado de cada invocação.
+> O método .Select() invoca o seletor delegado fornecido em cada elemento da sequência IEnumerable<T> de origem e devolve uma nova sequência IEnumerable<T> de resultado que contém o resultado de cada invocação.
 
 108. O que são Classes e Objetos?
 > Uma classe é uma estrutura de dados em C# que combina variáveis de dados e funções em uma única unidade. As instâncias da classe são conhecidas como objetos. Enquanto uma classe é apenas um blueprint, o objeto é uma instanciação real da classe e contém dados.
 De forma bem simples, a classe seria uma forma de bolo e objeto seria o bolo.
 
 109. O que é uma instância?
-> A instância de uma classe refere-se a um objeto dessa classe que herda as propriedades e métodos dessa classe. Podemos criar uma instância de qualquer classe em C# usando a palavra-chave new.
+> Instância refere-se a um objeto que herda as propriedades e métodos de uma classe. Podemos criar uma instância de qualquer classe em C# usando a palavra-chave new.
 
 110. O que são Propriedades?
 > Uma propriedade em C# é um membro que usa métodos de acesso para ler, escrever ou computar o valor de um campo privado como se fosse um membro de dados público.
@@ -531,7 +531,7 @@ De forma bem simples, a classe seria uma forma de bolo e objeto seria o bolo.
 > Um construtor é um método especial que é utilizado para inicializar objetos. A vantagem de um construtor é que é chamado quando um objeto de uma classe é criado.
 
 112. O que é o Garbage Collector?
-> No Common Language Runtime (CLR), o Garbage Collector (GC) funciona como um gestor de memória automático. O Garbage Collector gere a atribuição e a libertação de memória para uma aplicação. Por conseguinte, os programadores que trabalham com código gerido não têm de escrever código para executar tarefas de gestão de memória. A gestão automática da memória pode eliminar problemas comuns, como esquecer-se de libertar um objeto e causar uma fuga de memória ou tentar acessar a memória liberada para um objeto que já foi libertado.
+> No Common Language Runtime (CLR), o Garbage Collector (GC) funciona como um gestor de memória automático. O Garbage Collector gere a atribuição e a liberação de memória para uma aplicação. Por conseguinte, os programadores que trabalham com código gerido não têm de escrever código para executar tarefas de gestão de memória. A gestão automática da memória pode eliminar problemas comuns, como esquecer-se de libertar um objeto e causar uma fuga de memória (memory leak) ou tentar acessar a memória liberada para um objeto que já foi libertado.
 
 113. O que é Object Dispose?
 > No contexto do C#, dispose é um método de objeto invocado para executar o código necessário para a limpeza da memória e para libertar e repor recursos não geridos, tais como identificadores de ficheiros e ligações a bases de dados.
@@ -545,7 +545,7 @@ protected: o código está acessível na mesma classe ou numa classe herdada des
 > Em C#, estático significa algo que não pode ser instanciado. Não é possível criar um objeto de uma classe estática e não é possível acessar membros estáticos usando um objeto. Classes, variáveis, métodos, propriedades, operadores, eventos e construtores do C# podem ser definidos como estáticos usando a palavra-chave modificadora static.
 
 116. O que é Herança?
-> A herança é uma característica das linguagens de programação orientadas para objetos que permite definir uma classe de base que fornece uma funcionalidade específica (dados e comportamento) e definir classes derivadas que herdam ou substituem essa funcionalidade.
+> A herança é uma característica das linguagens de programação orientadas a objetos que permite definir uma classe de base que fornece uma funcionalidade específica (dados e comportamento) e definir classes derivadas que herdam ou substituem essa funcionalidade.
 
 117. O que é Upcast e Downcast?
 > Upcasting converte um objeto de um tipo especializado para um tipo mais geral. Downcasting converte um objeto de um tipo geral para um tipo mais especializado.
@@ -594,11 +594,13 @@ protected: o código está acessível na mesma classe ou numa classe herdada des
 
 132. Como restringimos um tipo genérico?
 > O C# permite usar restrições para restringir o código cliente a especificar determinados tipos ao instanciar tipos genéricos. Ele dará um erro de tempo de compilação se você tentar instanciar um tipo genérico usando um tipo que não é permitido pelas restrições especificadas.
+<p>(vídeo de apoio) O que são os Generic Constraints no C# 11 e .NET 7? - https://youtu.be/uhqiermTN6Y </p>
 
 > Pode especificar uma ou mais restrições no tipo genérico utilizando a cláusula where após o nome do tipo genérico.
 
 133. Como tratamos erros no C#?
 > Podemos utilizar o bloco try-catch.
+> <p>(vídeo de apoio) C# Para Iniciantes - Tratamento de Erros (Try...Catch) no C# - Aula 17 - https://youtu.be/dwhE9jN-uJ8</p>
 
 134. Qual a finalidade do finally?
 > O código dentro de um bloco finally será executado independentemente de haver ou não uma exceção. Isto é muito útil quando se trata de certas funções de limpeza que precisa de executar sempre, como fechar conexões com o banco de dados.
@@ -610,7 +612,7 @@ protected: o código está acessível na mesma classe ou numa classe herdada des
 > Uma Task é um objeto que representa um trabalho que deve ser feito. A Task pode dizer se a trabalho está concluído e se a operação devolve um resultado, a Task dá-lhe o resultado.
 
 137. Para que serve async/await?
-> Async e await em C# são os marcadores de código, que assinalam as posições de código a partir das quais o controlo deve ser retomado após a conclusão de uma Task.
+> async e await em C# são os marcadores de código, que assinalam as posições de código a partir das quais o controlo deve ser retomado após a conclusão de uma Task.
 
 138. Qual a diferença entre Task.FromResult e o uso de await?
 > FromResult significa que alguém precisa de uma Task, mas eu já tenho o resultado dessa Task, então crie uma Task que já esteja concluída. Por outro lado, await significa que este fluxo de trabalho não pode continuar até que o resultado esteja disponível, então espere por ele de forma assíncrona.
@@ -620,6 +622,7 @@ protected: o código está acessível na mesma classe ou numa classe herdada des
 
 140. Para que usamos a interface IComparable?
 > A interface IComparable define um método de comparação específico de tipo generalizado que um tipo ou classe de valor implementa para ordenar ou classificar as suas instâncias.
+> <p>(vídeo de apoio) SEU CODIGO 10x MAIS RÁPIDO - ENTENDENDO #IEQUATABLE, #ICOMPARABLE E #ICOMPARER NO C# - https://youtu.be/-Y0d13JbmhU</p>
 
 141. Quando utilizamos a interface IDisposable?
 > Devemos utilizar um padrão de desenho IDisposable (ou Dispose Pattern) quando necessitamos de eliminar objetos não geridos. Para implementar o padrão de desenho IDisposable, a classe que lida com objetos não geridos direta ou indiretamente deve implementar a interface IDisposable.
