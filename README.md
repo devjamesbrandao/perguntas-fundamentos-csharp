@@ -6,6 +6,7 @@
 
 2. O que diferencia uma linguagem compilada de uma interpretada?
 > A linguagem compilada precisa converter o nosso <strong>código-fonte</strong> inteiro para <strong>linguagem de máquina</strong> de uma só vez através de um programa chamado <strong>compilador</strong>. Nesse caso, o usuário recebe o código pronto para ser executado. Já a linguagem interpretada interpreta o <strong>código-fonte</strong> em partes por meio de um programa chamado <strong>interpretador</strong>, que irá então converter nosso código para <strong>linguagem de máquina</strong>. Assim, é necessário que o código seja interpretado e convertido para o cliente e então executado (o código não vem pronto igual ocorre na linguagem compilada). 
+> <p>(vídeo de apoio) LINGUAGEM COMPILADA E LINGUAGEM INTERPRETADA - Você sabe a diferença? | Por Douglas Guilino - https://youtu.be/EBZVFyVKzsU</p>
 
 3. Explique como o C# funciona
 > Primeiro o código em C# é compilado para a Intermediate Language (IL). Depois o CLR pega o IL e compila-o para código nativo do sistema operacional, ou seja, código executável.
