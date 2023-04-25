@@ -69,7 +69,7 @@
 22. Qual a finalidade das pastas Bin e Obj?
 > O diretório <strong>obj</strong> é para ficheiros de objetos intermediários e outros ficheiros de dados transitórios que são gerados pelo compilador ou sistema de construção durante uma construção. O diretório <strong>bin</strong> é o diretório onde serão escritos os binários de saída final (e quaisquer dependências ou outros ficheiros destacáveis).
 
-23. Quais partes compoe um programa em C#?
+23. Quais partes compoem um programa em C#?
 > A estrutura de um programa em C# pode ser dividida em um ou mais arquivos contendo os seguintes elementos:
 > - Namespaces;
 > - Tipos (classes, estruturas, interfaces, delegações, enums);
@@ -358,12 +358,227 @@ var ultimoDiaDoMes = DateTime.DaysInMonth(2022, 09);
 ```
 
 80. Podemos criar datas nulas?
-> Sim
+> Não, porque DateTime é um tipo de valor como int, decimal, etc. por isso não há maneira de atribuir um valor nulo. 
+```
+if(data == nulo) //ERRO
+```
+> Por padrão, DateTime não é anulável porque é um tipo de valor, mas usando o operador anulável introduzido no C# 2, você pode conseguir isso. Usando um ponto de interrogação (?) após o tipo ou usando o estilo genérico Nullable.
+
+81. O que são nullable types?
+> Como sabemos, a um tipo de valor não pode ser atribuído um valor nulo. Por exemplo, int mundiaisDoCorinthians = null dar-lhe-á um erro em tempo de compilação. 
+O C# 2.0 introduziu tipos nulos que permitem atribuir um valor nulo à variáveis de tipo de valor. Pode declarar tipos anuláveis usando Nullable<t> onde T é um tipo.
+```
+//Exemplo
+Nullable<int> i = null;
+```
+> Um tipo nulo pode representar a gama correta de valores para o seu tipo de valor subjacente, mais um valor nulo adicional. Por exemplo, Nullable<int> pode ser atribuído qualquer valor de -2147483648 a 2147483647, ou um valor nulo.
+
+82. O que é Timezone?
+> É responsável por descrever o fuso horário atual. Obtém informações sobre o fuso horário do computador atual.
+
+83. Como obtermos a data sem um Timezone no C#?
+> Se quisermos ignorar o fuso horário, podemos usar o método <strong>DateTimeOffset.Parse:</strong>
+```
+DateTimeOffset myDto = DateTimeOffset.Parse("2018-10-02T11:25:27.860Z");
+```
+
+84. O que é DateTime Offset?
+> A estrutura <strong>DateTimeOffset</strong> representa um valor de data e hora, juntamente com um offset que indica o quanto esse valor difere do UTC. Assim, o valor identifica sempre de forma inequívoca um único ponto no tempo.
+
+85. O que é um TimeSpan?
+> <strong>TimeSpan</strong> é uma estrutura em C# que representa um intervalo de tempo. Pode expressar durações, tais como a diferença entre duas datas ou horas, bem como os intervalos de tempo para agendar tarefas. O TimeSpan faz parte do namespace <strong>System</strong> e foi concebido para funcionar perfeitamente com objetos <strong>DateTime</strong> e <strong>DateTimeOffset</strong>.
+```
+TimeSpan ts1 = new TimeSpan(1, 30, 0); // 1 hora e 30 minutos
+TimeSpan ts2 = new TimeSpan(1, 0, 0, 0); // 1 dia
+```
+
+86. Qual a finalidade do Math.Round, Math.Celling e Math.Floor?
+> System.Math.Round recebe um número do tipo Double ou Decimal (dependendo de qual método e qual parâmetro você usar) e retorna o valor arredondado mais próximo do número informado. Assim round(1.49) irá ser arredondado para 1.5. Se você desejar arredondar usando dois dígitos, pode usar round(1.456, 2) que irá obter 1.46. Perceba que o arredondamento leva em conta a casa decimal. Assim round(1.444, 2) irá resultar em 1.44 enquanto que round(1.446, 2) resultará em 1.45.
+> System.Math.Ceiling recebe como parâmetro o número  e faz o arredondamento para o menor número entre o número e sua parte inteira. Assim Floor(1.1) irá retornar 1. Faz um arredondamento para 'baixo'.
+> System.Math.Floor recebe como parâmetro um número do tipo Double e retorna o valor arredondado para o maior número entre parte inteira do número e o número. Assim Ceiling(1.1) irá retornar 2. Faz um arredondamento para 'cima'.
+
+87. Qual a diferença entre List e IList?
+> A principal diferença entre List e IList em C# é que List é uma classe que representa uma lista de objetos que podem ser acessados por índice enquanto IList é uma interface que representa uma coleção de objetos que podem ser acessados por índice. A interface IList implementada a partir de duas interfaces e elas são ICollection e IEnumerable.
+
+> List e IList são utilizados para denotar um conjunto de objetos. Podem armazenar objetos de inteiros, string, etc. Existem métodos para inserir, remover elementos, pesquisar e ordenar elementos de uma Lista ou Lista IList. A maior diferença entre List e IList é que List é uma classe concreta e IList é uma interface. Globalmente, List é um tipo concreto que implementa a interface IList.
+
+88. Qual a finalidade do método Add e AddRange em uma lista?
+> Add() é utilizado para adicionar um elemento na lista. AddRange() é utilizado para adicionar uma gama de elementos (múltiplos elementos) de uma só vez na lista.
+
+89. Qual a finalidade do método Clear em uma lista?
+> O método Clear é utilizado para remover todos os itens da lista e as propriedades de capacidade e contagem são então exibidas.
+
+90. Qual a finalidade do método Contains em uma lista?
+> O método Contains verifica se o item especificado já existe na Lista C#. A classe List<T> do C# fornece métodos e propriedades para criar uma lista de objetos (classes). O método Contains verifica se o item especificado já existe na Lista.
+
+91. Qual a finalidade do método CopyTo em uma lista?
+> Copia toda a List<T> para uma matriz unidimensional compatível, começando no início da matriz de destino.
+
+92. Qual a finalidade do método Exists em uma lista?
+> O método Exists determina se uma lista contém elementos que correspondem ao predicado especificado.
+
+93. Qual a finalidade do método Find e FindAll em uma lista?
+> O método Find devolve o primeiro elemento que corresponde ao predicado dado. O método FindAll recupera todos os elementos que correspondem às condições definidas pelo predicado especificado.
+
+94. Qual a finalidade do método IndexOf e LastIndexOf em uma lista?
+> IndexOf procura o objeto especificado e devolve o índice baseado em zero da primeira ocorrência em toda a List<T>. LastIndexOf procura o objeto especificado e devolve o índice baseado em zero da última ocorrência em toda a List<T>.
+
+95. Qual a finalidade do método FindIndex, FindLast e FindLastIndex em uma lista?
+> O método List<T>.FindIndex é utilizado para procurar um elemento que corresponda às condições definidas por um predicado especificado e devolve o índice da primeira ocorrência na List<T>. Se não for encontrado um elemento que corresponda às condições, este método devolverá -1.
+FindLast procura um elemento que corresponda às condições definidas pelo predicado especificado e devolve a última ocorrência em toda a List<T>.
+FindLastIndex(Predicate<T>) Procura um elemento que corresponda às condições definidas pelo predicado especificado e retorna o índice baseado em zero da última ocorrência em toda a List<T>.
+
+96. Qual a finalidade do método Insert e InsertRange em uma lista?
+> List.Insert() insere um único elemento na List<T> no índice especificado. Já InsertRange() insere vários elementos da colecção na List<T> no índice especificado.
+
+97. Qual a finalidade do método Remove, RemoveAll, RemoveAt e RemoveRange em uma lista?
+> O método Remove() remove a primeira ocorrência de um objeto específico de uma Lista. 
+List<T>.RemoveAll(Predicate<T>) é utilizado para remover todos os elementos que correspondem às condições definidas pelo predicado especificado.
+Quando chama RemoveAt para remover um item, os restantes itens da lista são renumerados para substituir o item removido. Por exemplo, se remover o item no índice 3, o item no índice 4 é movido para a posição 3. Além disso, o número de itens na lista (conforme representado pela propriedade Count) é reduzido em 1.
+
+98. Qual a finalidade do método Reverse em uma lista?
+> Reverse() Inverte a ordem dos elementos em toda a List<T>.
+
+99. Qual a finalidade do método Sort em uma lista?
+> O método Sort ordena os números inteiros por ordem crescente, enquanto o método Reverse ordena por ordem decrescente
+
+100. Qual a finalidade do método ToArray em uma lista?
+> Este método copia os itens da Lista para uma nova matriz e devolve a matriz a quem a chamou.
+
+101. Qual a finalidade do método TrueForAll em uma lista?
+> Determina se cada elemento da List<T> corresponde às condições definidas pelo predicado especificado.
+
+102. Qual a finalidade do método ConvertAll em uma lista?
+> List.ConvertAll() converte os elementos da lista atual para outro tipo e devolve uma lista que contém os elementos convertidos.
+
+103. Qual a finalidade do método ForEach em uma lista?
+> A instrução forEach é uma instrução genérica do C# que pode ser utilizada para iterar sobre os elementos de uma lista.
+
+104. Qual a finalidade do método Where em uma lista?
+> A cláusula where é utilizada numa expressão de consulta para especificar quais os elementos da fonte de dados que serão devolvidos na expressão de consulta. Aplica uma condição booleana (predicado) a cada elemento de origem (referenciado pela variável de intervalo) e devolve aqueles para os quais a condição especificada é verdadeira.
+
+105. Qual a finalidade do método First em uma lista?
+> O método First() do LINQ devolve o primeiro elemento da estrutura de dados especificada.
+
+106. Qual a finalidade do método OrderBy em uma lista?
+> A cláusula orderby faz com que a sequência ou subsequência (grupo) devolvida seja ordenada por ordem ascendente ou descendente.
+
+107. Qual a finalidade do método Select em uma lista?
+> O método Select() invoca o selector delegado fornecido em cada elemento da sequência IEnumerable<T> de origem e devolve uma nova sequência IEnumerable<T> de resultado que contém o resultado de cada invocação.
+
+108. O que são Classes e Objetos?
+> Uma classe é uma estrutura de dados em C# que combina variáveis de dados e funções em uma única unidade. As instâncias da classe são conhecidas como objetos. Enquanto uma classe é apenas um blueprint, o objeto é uma instanciação real da classe e contém dados.
+De forma bem simples, a classe seria uma forma de bolo e objeto seria o bolo.
+
+109. O que é uma instância?
+> A instância de uma classe refere-se a um objeto dessa classe que herda as propriedades e métodos dessa classe. Podemos criar uma instância de qualquer classe em C# usando a palavra-chave new.
+
+110. O que são Propriedades?
+> Uma propriedade em C# é um membro que usa métodos de acesso para ler, escrever ou computar o valor de um campo privado como se fosse um membro de dados público.
+
+111. O que são Métodos construtores?
+> Um construtor é um método especial que é utilizado para inicializar objetos. A vantagem de um construtor é que é chamado quando um objeto de uma classe é criado.
+
+112. O que é o Garbage Collector?
+> No Common Language Runtime (CLR), o Garbage Collector (GC) funciona como um gestor de memória automático. O Garbage Collector gere a atribuição e a libertação de memória para uma aplicação. Por conseguinte, os programadores que trabalham com código gerido não têm de escrever código para executar tarefas de gestão de memória. A gestão automática da memória pode eliminar problemas comuns, como esquecer-se de libertar um objeto e causar uma fuga de memória ou tentar acessar a memória liberada para um objeto que já foi libertado.
+
+113. O que é Object Dispose?
+> No contexto do C#, dispose é um método de objeto invocado para executar o código necessário para a limpeza da memória e para libertar e repor recursos não geridos, tais como identificadores de ficheiros e ligações a bases de dados.
+
+114. Defina os modificadores public, private e protected
+> public: o código é acessível a todas as classes.
+private: o código só é acessível dentro da mesma classe.
+protected: o código está acessível na mesma classe ou numa classe herdada dessa classe.
+
+115. O que são objetos estáticos?
+> Em C#, estático significa algo que não pode ser instanciado. Não é possível criar um objeto de uma classe estática e não é possível acessar membros estáticos usando um objeto. Classes, variáveis, métodos, propriedades, operadores, eventos e construtores do C# podem ser definidos como estáticos usando a palavra-chave modificadora static.
+
+116. O que é Herança?
+> A herança é uma característica das linguagens de programação orientadas para objetos que permite definir uma classe de base que fornece uma funcionalidade específica (dados e comportamento) e definir classes derivadas que herdam ou substituem essa funcionalidade.
+
+117. O que é Upcast e Downcast?
+> Upcasting converte um objeto de um tipo especializado para um tipo mais geral. Downcasting converte um objeto de um tipo geral para um tipo mais especializado.
+
+118. O que são Interfaces?
+> Uma interface define um contrato. Qualquer classe ou struct que implemente esse contrato deve fornecer uma implementação dos membros definidos na interface. Uma interface pode definir uma implementação por padrão para os membros. Pode também definir membros estáticos, de modo a fornecer uma única implementação para uma funcionalidade comum.
+
+119. O que são Classes abstratas?
+> É uma classe restrita que não pode ser utilizada para criar objetos (para acessá-la, deve ser herdada de outra classe). 
+
+120. Qual a finalidade das Classes seladas?
+> Uma classe selada, em C#, é uma classe que não pode ser herdada por nenhuma classe, mas pode ser instanciada. A intenção do design de uma classe selada é indicar que a classe é especializada e não há necessidade de estendê-la para fornecer qualquer funcionalidade adicional por meio de herança para substituir seu comportamento.
+
+121. O que é Sobrecarga de métodos?
+> A sobrecarga acontece quando temos dois métodos com o mesmo nome mas com assinaturas (ou argumentos) diferentes. Numa classe, podemos implementar dois ou mais métodos com o mesmo nome. Os métodos sobrecarregados são diferenciados com base no número e no tipo de parâmetros passados como argumentos para os métodos.
+
+122. O que é Sobrescrita de método?
+> Sobrescrita fornece uma nova implementação do método herdado de uma classe de base. O método que é sobrescrito é conhecido como o método base substituído. Um método de substituição tem de ter a mesma assinatura que o método de base substituído.
+
+123. Como podemos Comparar dois objetos no C#?
+> Em C#, os objetos podem ser comparados com o operador ==, com o membro Equals(Object), com o método Object.Equals(Object, Object) ou utilizando comparadores personalizados que implementam uma ou mais das interfaces IEquatable<T>, IComparable, IStructuralEquatable ou IStructuralComparable.
+
+124. Qual a finalidade do Dispose?
+> O método Dispose executa toda a limpeza do objeto, de modo que o Garbage Collector não precisa mais chamar a substituição Object. Portanto, a chamada ao método SuppressFinalize impede que o Garbage Collector execute o finalizador.
+
+125. O que é Encapsulamento?
+> O encapsulamento, no contexto do C#, refere-se à capacidade de um objeto de ocultar dados e comportamentos que não são necessários ao seu utilizador. O encapsulamento permite que um grupo de propriedades, métodos e outros membros sejam considerados uma única unidade ou objeto.
+
+126. O que é Polimorfismo?
+> O termo polimorfismo é um termo de programação orientada a objetos que significa que uma função, ou um operador, se comporta de forma diferente em cenários diferentes. Tecnicamente, podemos dizer que quando uma função mostra comportamentos diferentes quando passamos diferentes tipos e números de valores de entrada, então é chamado de Polimorfismo em C#.
+
+127. O que são Tipos complexos?
+> Um tipo complexo é um conjunto de propriedades que existem no seu próprio objeto para C#, mas que são mapeadas para colunas numa tabela já existente (a da entidade que o contém), em vez de terem a sua própria tabela (que precisaria de uma chave, etc.).
+
+128. O que são Delegates?
+> Um Delegate é um tipo que representa referências a métodos com uma lista de parâmetros e um tipo de retorno específicos. Ao instanciar um Delegate, pode associar a sua instância a qualquer método com uma assinatura e um tipo de retorno compatíveis. Pode invocar (ou chamar) o método através da instância do Delegate.
+
+129. O que são events?
+> Os eventos em C# são ações que permitem que classes ou objetos informem outras classes ou objetos quando ocorre um fenômeno interessante.
+
+130. Qual a diferença entre Events e Delegates?
+> Os eventos são normalmente membros públicos da classe. Em comparação, os delegates são frequentemente passados como parâmetros e armazenados como membros privados da classe, se é que são armazenados.
+
+131. O que são os generics?
+> Os generics permitem definir a especificação do tipo de dados dos elementos de programação numa classe ou num método, até serem efetivamente utilizados no programa. Em outras palavras, os generics permitem escrever uma classe ou um método que pode funcionar com qualquer tipo de dados.
+
+132. Como restringimos um tipo genérico?
+> O C# permite usar restrições para restringir o código cliente a especificar determinados tipos ao instanciar tipos genéricos. Ele dará um erro de tempo de compilação se você tentar instanciar um tipo genérico usando um tipo que não é permitido pelas restrições especificadas.
+
+> Pode especificar uma ou mais restrições no tipo genérico utilizando a cláusula where após o nome do tipo genérico.
+
+133. Como tratamos erros no C#?
+> Podemos utilizar o bloco try-catch.
+
+134. Qual a finalidade do finally?
+> O código dentro de um bloco finally será executado independentemente de haver ou não uma exceção. Isto é muito útil quando se trata de certas funções de limpeza que precisa de executar sempre, como fechar conexões com o banco de dados.
+
+135. Para que serve o Try/Parse?
+> O TryParse do C# é um método que permite verificar a validade de uma string antes de tentar convertê-la em um tipo específico. Ele pode evitar muitas dores de cabeça ao longo do caminho.
+
+136. O que são Tasks?
+> Uma Task é um objeto que representa um trabalho que deve ser feito. A Task pode dizer se a trabalho está concluído e se a operação devolve um resultado, a Task dá-lhe o resultado.
+
+137. Para que serve async/await?
+> Async e await em C# são os marcadores de código, que assinalam as posições de código a partir das quais o controlo deve ser retomado após a conclusão de uma Task.
+
+138. Qual a diferença entre Task.FromResult e o uso de await?
+> FromResult significa que alguém precisa de uma Task, mas eu já tenho o resultado dessa Task, então crie uma Task que já esteja concluída. Por outro lado, await significa que este fluxo de trabalho não pode continuar até que o resultado esteja disponível, então espere por ele de forma assíncrona.
+
+139. Para que usamos a interface IEquatable?
+> A interface IEquatable<T> é utilizada para verificar a igualdade entre duas classes
+
+140. Para que usamos a interface IComparable?
+> A interface IComparable define um método de comparação específico de tipo generalizado que um tipo ou classe de valor implementa para ordenar ou classificar as suas instâncias.
+
+141. Quando utilizamos a interface IDisposable?
+> Devemos utilizar um padrão de desenho IDisposable (ou Dispose Pattern) quando necessitamos de eliminar objetos não geridos. Para implementar o padrão de desenho IDisposable, a classe que lida com objetos não geridos direta ou indiretamente deve implementar a interface IDisposable.
+
+142. O que são Extension methods?
+> O método de extensão do C# é um método estático de uma classe estática, em que o modificador "this" é aplicado ao primeiro parâmetro. O tipo do primeiro parâmetro será o tipo que é estendido. Os métodos de extensão só estão no escopo quando você importa explicitamente o namespace para o seu código-fonte com uma diretiva using.
+
 
 ### ` 🌐 Referências`
 - <p> Perguntas para entrevista de C# e .NET: https://balta.io/blog/perguntas-entrevista-csharp</p>
-
-- <p> C#: Tipos de Valor e Tipos de Referência: https://calegari.dev/posts/c-sharp-tipos-de-valor-e-referencia/#:~:text=Em%20C%23%2C%20quando%20voc%C3%AA%20cria,valor%20e%20tipos%20de%20refer%C3%AAncia</p>
 
 - <p> Por que utilizar C#?: https://balta.io/blog/csharp</p>
 
