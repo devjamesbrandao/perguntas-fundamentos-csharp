@@ -397,18 +397,30 @@ TimeSpan ts2 = new TimeSpan(1, 0, 0, 0); // 1 dia
 ```
 
 86. Qual a finalidade do Math.Round, Math.Celling e Math.Floor?
-> System.Math.Round recebe um número do tipo Double ou Decimal (dependendo de qual método e qual parâmetro você usar) e retorna o valor arredondado mais próximo do número informado. Assim round(1.49) irá ser arredondado para 1.5. Se você desejar arredondar usando dois dígitos, pode usar round(1.456, 2) que irá obter 1.46. Perceba que o arredondamento leva em conta a casa decimal. Assim round(1.444, 2) irá resultar em 1.44 enquanto que round(1.446, 2) resultará em 1.45.
-> System.Math.Ceiling recebe como parâmetro o número  e faz o arredondamento para o menor número entre o número e sua parte inteira. Assim Floor(1.1) irá retornar 1. Faz um arredondamento para 'baixo'.
-> System.Math.Floor recebe como parâmetro um número do tipo Double e retorna o valor arredondado para o maior número entre parte inteira do número e o número. Assim Ceiling(1.1) irá retornar 2. Faz um arredondamento para 'cima'.
+> <strong>System.Math.Round</strong> recebe um número do tipo Double ou Decimal (dependendo de qual método e qual parâmetro você usar) e retorna o valor arredondado mais próximo do número informado. Assim round(1.49) irá ser arredondado para 1.5. Se você desejar arredondar usando dois dígitos, pode usar round(1.456, 2) que irá obter 1.46. Perceba que o arredondamento leva em conta a casa decimal. Assim round(1.444, 2) irá resultar em 1.44 enquanto que round(1.446, 2) resultará em 1.45.
+> <strong>System.Math.Ceiling</strong> recebe como parâmetro o número  e faz o arredondamento para o menor número entre o número e sua parte inteira. Assim Floor(1.1) irá retornar 1. Faz um arredondamento para 'baixo'.
+> <strong>System.Math.Floor</strong> recebe como parâmetro um número do tipo Double e retorna o valor arredondado para o maior número entre parte inteira do número e o número. Assim Ceiling(1.1) irá retornar 2. Faz um arredondamento para 'cima'.
 
 87. Qual a diferença entre List e IList?
-> A principal diferença entre List e IList em C# é que List é uma classe que representa uma lista de objetos que podem ser acessados por índice enquanto IList é uma interface que representa uma coleção de objetos que podem ser acessados por índice. A interface IList implementada a partir de duas interfaces e elas são ICollection e IEnumerable.
+> A principal diferença entre List e IList em C# é que List é uma classe que representa uma lista de objetos que podem ser acessados por índice enquanto IList é uma interface que representa uma coleção de objetos que podem ser acessados por índice. A interface IList é implementada a partir de duas interfaces, são elas ICollection e IEnumerable.
 
 > List e IList são utilizados para denotar um conjunto de objetos. Podem armazenar objetos de inteiros, string, etc. Existem métodos para inserir, remover elementos, pesquisar e ordenar elementos de uma Lista ou Lista IList. A maior diferença entre List e IList é que List é uma classe concreta e IList é uma interface. Globalmente, List é um tipo concreto que implementa a interface IList.
 
 88. Qual a finalidade do método Add e AddRange em uma lista?
 > Add() é utilizado para adicionar um elemento na lista. AddRange() é utilizado para adicionar uma gama de elementos (múltiplos elementos) de uma só vez na lista.
+```
+// Exemplo Add()
+List<int> numeros = new List<int>();
+numeros.Add(1); // adicionando elementos usando método Add()
+  
+// Exemplo 
+string[] cidades = new string[3]{ "Araguaína", "Palmas", "Gurupi" };
 
+var maioresCidadesDoTocantins = new List<string>();
+
+// adicionando um array em uma lista com o método AddRange()
+maioresCidadesDoTocantins.AddRange(cidades);
+```
 89. Qual a finalidade do método Clear em uma lista?
 > O método Clear é utilizado para remover todos os itens da lista e as propriedades de capacidade e contagem são então exibidas.
 
