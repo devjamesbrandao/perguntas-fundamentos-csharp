@@ -266,6 +266,24 @@ Console.WriteLine($"O Brasil é composto por {estadosBrasileiros} estados");
 
 59. Qual a finalidade do método CompareTo?
 > O método <strong>Int16.CompareTo()</strong> em C# é usado para comparar a instância de um objeto com outro objeto especificado ou outra instância Int16 e retorna um inteiro que indica se o valor desta instância é menor, igual ou maior que o valor do objeto especificado ou da outra instância Int16.
+```
+// declarando e inicializando valor1
+short valor1 = 1;
+
+// declarando e inicializando valor2
+short valor2 = 5;
+
+// usando método CompareTo()
+int status = valor1.CompareTo(valor2);
+
+// verificando status
+if (status > 0)
+    Console.WriteLine("{0} é maior que {1}", valor1, valor2);
+else if (status < 0)
+    Console.WriteLine("{0} é menor que {1}", valor1, valor2);
+else
+    Console.WriteLine("{0} é igual a {1}", valor1, valor2);
+```
 
 60. Qual a finalidade do método Contains?
 > O método Contains() em C# é usado para retornar um valor indicando se uma substring específica ocorre dentro de outra string. Exemplo:
