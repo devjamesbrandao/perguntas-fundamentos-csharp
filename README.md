@@ -343,6 +343,25 @@ var data = DateTime.Now.ToString();
 
 77. Como comparamos duas datas em C#?
 > Podemos utilizar o método <strong>DateTime.Compare()</strong> para comparar duas datas. Esse método retorna um valor inteiro menor que zero se a data1 é menor que a data2; um valor igual a zero se a data1 for igual a data2; e um valor maior que zero se a data1 for maior que a data2. Além disso, também podemos utilizar os  operadores de comparação para comparar duas datas.
+```
+// criando um objeto DateTime
+DateTime date1 = new DateTime(2023, 05, 07);
+
+// criando um objeto DateTime
+DateTime date2 = new DateTime(2023, 05, 06);
+
+// comparando date1 e date2
+// usando método Compare();
+int valor = DateTime.Compare(date1, date2);
+
+// verificando
+if (valor > 0)
+    Console.Write("date1 é maior que date2. ");
+else if (valor < 0)
+    Console.Write("date1 é menor que date2. ");
+else
+    Console.Write("date1 é igual a date2. ");
+```
 
 78. Como podemos obter o ano, mês ou dia no C#?
 ```
