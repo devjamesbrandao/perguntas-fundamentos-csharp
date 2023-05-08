@@ -485,7 +485,7 @@ TimeSpan ts2 = new TimeSpan(1, 0, 0, 0); // 1 dia
 > <strong>System.Math.Floor</strong> recebe como parâmetro um número do tipo Double e retorna o valor arredondado para o maior número entre parte inteira do número e o número. Assim Ceiling(1.1) irá retornar 2. Faz um arredondamento para 'cima'.
 
 87. Qual a diferença entre List e IList?
-> A principal diferença entre <strong>List<T></strong> e <strong>IList<T></strong> em C# é que List é uma classe que representa uma lista de objetos que podem ser acessados por índice enquanto IList é uma interface que representa uma coleção de objetos que podem ser acessados por índice. A interface IList é implementada a partir de duas interfaces, são elas ICollection e IEnumerable.
+> A principal diferença entre <strong>List<T></strong> e <strong>IList<T></strong> em C# é que List é uma classe que representa uma lista de objetos que podem ser acessados por índice enquanto IList é uma interface que representa uma coleção de objetos que podem ser acessados por índice. 
 
 > List e IList são utilizados para denotar um conjunto de objetos. Podem armazenar objetos de inteiros, string, etc. Existem métodos para inserir, remover elementos, pesquisar e ordenar elementos de uma Lista ou Lista IList. A maior diferença entre List e IList é que List é uma classe concreta e IList é uma interface. Globalmente, List é um tipo concreto que implementa a interface IList.
 
