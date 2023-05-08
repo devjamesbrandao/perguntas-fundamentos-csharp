@@ -603,6 +603,9 @@ Quando chama RemoveAt para remover um item, os restantes itens da lista são ren
 108. O que são Classes e Objetos?
 > Uma classe é uma estrutura de dados em C# que combina variáveis de dados e funções em uma única unidade. As instâncias da classe são conhecidas como objetos. Enquanto uma classe é apenas um blueprint, o objeto é uma instanciação real da classe e contém dados.
 De forma bem simples, a classe seria uma forma de bolo e objeto seria o bolo.
+<p align="center">
+    <img src="/Img/Class-and-Object-Concept.png" alt="Exemplo da diferença entre classe e objeto" title="Exemplo da diferença entre classe e objeto">
+</p> 
 
 109. O que é uma instância?
 > Instância refere-se a um objeto que herda as propriedades e métodos de uma classe. Podemos criar uma instância de qualquer classe em C# usando a palavra-chave new.
