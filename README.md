@@ -268,6 +268,28 @@ public void AumentarSalarioDoDev(decimal valorAumento = 2000)
 
 56. O que são enumeradores?
 > Na linguagem C#, <strong>enum</strong> é um tipo de valor definido pelo usuário usado para representar uma lista de constantes inteiras nomeadas. Ele é criado usando a palavra-chave <strong>enum</strong> dentro de uma classe, estrutura ou espaço de nomes. Ele melhora a legibilidade, a manutenção e reduz a complexidade de um programa.
+```
+using System;
+
+namespace ExemploDeEnum
+{
+  enum Cargo
+  {
+    Junior,
+    Pleno,
+    Senior
+  }
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Cargo cargoQueOcupoAtualmente = Cargo.Pleno;
+      
+      Console.WriteLine(cargoQueOcupoAtualmente);
+    }
+  }
+}
+```
 
 57. O que é um GUID?
 > <strong>GUID</strong> significa <strong>Global Unique Identifier (Identificador Único Global)</strong>. Um GUID é um inteiro de 32 bits (16 bytes) que você pode usar em todos os computadores e redes onde quer que um identificador único seja necessário. Exemplo de GUID no C#: <strong>0f8fad5b-d9cb-469f-a165-70867728950e</strong>
