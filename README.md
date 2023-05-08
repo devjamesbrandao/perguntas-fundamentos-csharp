@@ -618,6 +618,9 @@ De forma bem simples, a classe seria uma forma de bolo e objeto seria o bolo.
 
 112. O que é o Garbage Collector?
 > No Common Language Runtime (CLR), o Garbage Collector (GC) funciona como um gestor de memória automático. O Garbage Collector gere a atribuição e a liberação de memória para uma aplicação. Por conseguinte, os programadores que trabalham com código gerido não têm de escrever código para executar tarefas de gestão de memória. A gestão automática da memória pode eliminar problemas comuns, como esquecer-se de libertar um objeto e causar uma fuga de memória (memory leak) ou tentar acessar a memória liberada para um objeto que já foi libertado.
+<p align="center">
+    <img src="/Img/garbage-collector.jpg" alt="Imagem ilustrativa do Garbage collector" title="Imagem ilustrativa do Garbage collector">
+</p> 
 
 113. O que é Object Dispose?
 > No contexto do C#, dispose é um método de objeto invocado para executar o código necessário para a limpeza da memória e para libertar e repor recursos não geridos, tais como identificadores de ficheiros e ligações a bases de dados.
