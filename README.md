@@ -158,6 +158,23 @@ a = (int)x;
 
 40. Qual a diferença entre parse e Convert?
 > O <strong>Parse</strong> não aceita valor nulo na conversão, mas o <strong>Convert</strong> aceita. Por exemplo, <strong>Parse</strong> e <strong>Convert</strong> para <strong>Int32</strong> são dois métodos para converter uma string para um número inteiro. A principal diferença entre int Parse e Convert para Int32 em C# é que passando um valor nulo para int Parse lançará um ArgumentNullException enquanto que passando um valor nulo para Convert ToInt32 dará zero.
+```
+string mundiaisDoPalmeiras = null;
+		
+try
+{
+  var conversaoComParse = int.Parse(mundiaisDoPalmeiras);
+
+  Console.WriteLine(conversaoComParse);
+}
+catch (ArgumentNullException)
+{
+  Console.WriteLine("O método int.Parse() lançou uma exceção do tipo ArgumentNullException. \n");
+}
+var conversaoComConvert = Convert.ToInt32(mundiaisDoPalmeiras);
+
+Console.WriteLine("O valor da variável conversaoComConvert é: " + conversaoComConvert);
+```
 
 41. O que são operadores aritméticos e quais temos no C#?
 > Os <strong>operadores aritméticos</strong> são utilizados para realizar operações matemáticas comuns. São eles:
