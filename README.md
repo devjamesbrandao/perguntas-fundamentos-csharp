@@ -224,6 +224,10 @@ Console.WriteLine("O valor da variável conversaoComConvert é: " + conversaoCom
 47. Qual a diferença entre while e do/while?
 > Enquanto o laço de repetição <strong>while</strong> verifica primeiro a condição e depois executa a(s) declaração(ões), o laço <strong>do while</strong> executa a(s) declaração(ões) pelo menos uma vez, depois verifica a condição.
 
+<p align="center">
+    <img src="/Img/6wksqjmmyw321.jpg" alt="Meme loop while() e do while()" title="Meme loop while() e do while()">
+</p> 
+
 48. Como definimos que um método não retorna valor algum?
 > Adicionamos a palavra <strong>void</strong> no retorno do método. Exemplo:
 ```
