@@ -636,28 +636,28 @@ protected: o código está acessível na mesma classe ou numa classe herdada des
 > Uma classe selada, em C#, é uma classe que não pode ser herdada por nenhuma classe, mas pode ser instanciada. A intenção do design de uma classe selada é indicar que a classe é especializada e não há necessidade de estendê-la para fornecer qualquer funcionalidade adicional por meio de herança para substituir seu comportamento.
 
 121. O que é Sobrecarga de métodos?
-> A sobrecarga acontece quando temos dois métodos com o mesmo nome mas com assinaturas (ou argumentos) diferentes. Numa classe, podemos implementar dois ou mais métodos com o mesmo nome. Os métodos sobrecarregados são diferenciados com base no número e no tipo de parâmetros passados como argumentos para os métodos.
+> A <p>sobrecarga</p> acontece quando temos dois métodos com o mesmo nome mas com assinaturas (ou argumentos) diferentes. Numa classe, podemos implementar dois ou mais métodos com o mesmo nome. Os métodos sobrecarregados são diferenciados com base no número e no tipo de parâmetros passados como argumentos para os métodos.
 
 122. O que é Sobrescrita de método?
-> Sobrescrita fornece uma nova implementação do método herdado de uma classe de base. O método que é sobrescrito é conhecido como o método base substituído. Um método de substituição tem de ter a mesma assinatura que o método de base substituído.
+> <p>Sobrescrita</p> fornece uma nova implementação do método herdado de uma classe de base. O método que é sobrescrito é conhecido como o método base substituído. Um método de substituição tem de ter a mesma assinatura que o método de base substituído.
 
 123. Como podemos Comparar dois objetos no C#?
 > Em C#, os objetos podem ser comparados com o operador ==, com o membro Equals(Object), com o método Object.Equals(Object, Object) ou utilizando comparadores personalizados que implementam uma ou mais das interfaces IEquatable<T>, IComparable, IStructuralEquatable ou IStructuralComparable.
 
 124. Qual a finalidade do Dispose?
-> O método Dispose executa toda a limpeza do objeto, de modo que o Garbage Collector não precisa mais chamar a substituição Object. Portanto, a chamada ao método SuppressFinalize impede que o Garbage Collector execute o finalizador.
+> O método <p>Dispose</p> executa toda a limpeza do objeto, de modo que o Garbage Collector não precisa mais chamar a substituição Object. Portanto, a chamada ao método SuppressFinalize impede que o Garbage Collector execute o finalizador.
 
 125. O que é Encapsulamento?
-> O encapsulamento, no contexto do C#, refere-se à capacidade de um objeto de ocultar dados e comportamentos que não são necessários ao seu utilizador. O encapsulamento permite que um grupo de propriedades, métodos e outros membros sejam considerados uma única unidade ou objeto.
+> O <p>encapsulamento</p>, no contexto do C#, refere-se à capacidade de um objeto de ocultar dados e comportamentos que não são necessários ao seu utilizador. O encapsulamento permite que um grupo de propriedades, métodos e outros membros sejam considerados uma única unidade ou objeto.
 
 126. O que é Polimorfismo?
-> O termo polimorfismo é um termo de programação orientada a objetos que significa que uma função, ou um operador, se comporta de forma diferente em cenários diferentes. Tecnicamente, podemos dizer que quando uma função mostra comportamentos diferentes quando passamos diferentes tipos e números de valores de entrada, então é chamado de Polimorfismo em C#.
+> O termo <p>polimorfismo</p> é um termo de programação orientada a objetos que significa que uma função, ou um operador, se comporta de forma diferente em cenários diferentes. Tecnicamente, podemos dizer que quando uma função mostra comportamentos diferentes quando passamos diferentes tipos e números de valores de entrada, então é chamado de Polimorfismo em C#.
 
 127. O que são Tipos complexos?
 > Um tipo complexo é um conjunto de propriedades que existem no seu próprio objeto para C#, mas que são mapeadas para colunas numa tabela já existente (a da entidade que o contém), em vez de terem a sua própria tabela (que precisaria de uma chave, etc.).
 
 128. O que são Delegates?
-> Um Delegate é um tipo que representa referências a métodos com uma lista de parâmetros e um tipo de retorno específicos. Ao instanciar um Delegate, pode associar a sua instância a qualquer método com uma assinatura e um tipo de retorno compatíveis. Pode invocar (ou chamar) o método através da instância do Delegate.
+> Um <p>Delegate</p> é um tipo que representa referências a métodos com uma lista de parâmetros e um tipo de retorno específicos. Ao instanciar um Delegate, pode associar a sua instância a qualquer método com uma assinatura e um tipo de retorno compatíveis. Pode invocar (ou chamar) o método através da instância do Delegate.
 
 129. O que são events?
 > Os eventos em C# são ações que permitem que classes ou objetos informem outras classes ou objetos quando ocorre um fenômeno interessante.
@@ -666,7 +666,7 @@ protected: o código está acessível na mesma classe ou numa classe herdada des
 > Os eventos são normalmente membros públicos da classe. Em comparação, os delegates são frequentemente passados como parâmetros e armazenados como membros privados da classe, se é que são armazenados.
 
 131. O que são os generics?
-> Os generics permitem definir a especificação do tipo de dados dos elementos de programação numa classe ou num método, até serem efetivamente utilizados no programa. Em outras palavras, os generics permitem escrever uma classe ou um método que pode funcionar com qualquer tipo de dados.
+> Os <p>generics</p> permitem definir a especificação do tipo de dados dos elementos de programação numa classe ou num método, até serem efetivamente utilizados no programa. Em outras palavras, os generics permitem escrever uma classe ou um método que pode funcionar com qualquer tipo de dados.
 
 132. Como restringimos um tipo genérico?
 > O C# permite usar restrições para restringir o código cliente a especificar determinados tipos ao instanciar tipos genéricos. Ele dará um erro de tempo de compilação se você tentar instanciar um tipo genérico usando um tipo que não é permitido pelas restrições especificadas.
@@ -679,22 +679,22 @@ protected: o código está acessível na mesma classe ou numa classe herdada des
 > <p>(vídeo de apoio) C# Para Iniciantes - Tratamento de Erros (Try...Catch) no C# - Aula 17 - https://youtu.be/dwhE9jN-uJ8</p>
 
 134. Qual a finalidade do finally?
-> O código dentro de um bloco finally será executado independentemente de haver ou não uma exceção. Isto é muito útil quando se trata de certas funções de limpeza que precisa de executar sempre, como fechar conexões com o banco de dados.
+> O código dentro de um bloco <p>finally</p> será executado independentemente de haver ou não uma exceção. Isto é muito útil quando se trata de certas funções de limpeza que precisa de executar sempre, como fechar conexões com o banco de dados.
 
 135. Para que serve o Try/Parse?
-> O TryParse do C# é um método que permite verificar a validade de uma string antes de tentar convertê-la em um tipo específico. Ele pode evitar muitas dores de cabeça ao longo do caminho.
+> O <p>TryParse</p> do C# é um método que permite verificar a validade de uma string antes de tentar convertê-la em um tipo específico. Ele pode evitar muitas dores de cabeça ao longo do caminho.
 
 136. O que são Tasks?
-> Uma Task é um objeto que representa um trabalho que deve ser feito. A Task pode dizer se a trabalho está concluído e se a operação devolve um resultado, a Task dá-lhe o resultado.
+> Uma <p>Task</p> é um objeto que representa um trabalho que deve ser feito. A Task pode dizer se a trabalho está concluído e se a operação devolve um resultado, a Task dá-lhe o resultado.
 
 137. Para que serve async/await?
-> async e await em C# são os marcadores de código, que assinalam as posições de código a partir das quais o controlo deve ser retomado após a conclusão de uma Task.
+> <p>async e await</p> em C# são os marcadores de código, que assinalam as posições de código a partir das quais o controlo deve ser retomado após a conclusão de uma Task.
 
 138. Qual a diferença entre Task.FromResult e o uso de await?
-> FromResult significa que alguém precisa de uma Task, mas eu já tenho o resultado dessa Task, então crie uma Task que já esteja concluída. Por outro lado, await significa que este fluxo de trabalho não pode continuar até que o resultado esteja disponível, então espere por ele de forma assíncrona.
+> <p>Task.FromResult</p> significa que alguém precisa de uma Task, mas eu já tenho o resultado dessa Task, então crie uma Task que já esteja concluída. Por outro lado, await significa que este fluxo de trabalho não pode continuar até que o resultado esteja disponível, então espere por ele de forma assíncrona.
 
 139. Para que usamos a interface IEquatable?
-> A interface IEquatable<T> é utilizada para verificar a igualdade entre duas classes
+> A interface <p>IEquatable<T></p> é utilizada para verificar a igualdade entre duas classes
 
 140. Para que usamos a interface IComparable?
 > A interface IComparable define um método de comparação específico de tipo generalizado que um tipo ou classe de valor implementa para ordenar ou classificar as suas instâncias.
