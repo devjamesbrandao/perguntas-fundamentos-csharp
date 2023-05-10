@@ -354,6 +354,8 @@ string filme = "Jogos vorazes";
 		
 if(filme.StartsWith("J", StringComparison.InvariantCultureIgnoreCase))
 	Console.WriteLine("A palavara começa com a letra J");
+if(filme.EndsWith("S", StringComparison.InvariantCultureIgnoreCase))
+	Console.WriteLine("A palavara termina com a letra S");
 ```
 
 62. Qual a finalidade do método Equals?
