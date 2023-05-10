@@ -348,6 +348,13 @@ else
 
 61. Qual a finalidade do método StartsWith e EndsWith?
 > O método <strong>StartsWith</strong> verifica se uma palavra começa com determinada letra. Já o método <strong>EndsWith</strong> verifica se uma palavra termina com determinada letra.
+```
+// o texto
+string filme = "Jogos vorazes";
+		
+if(filme.StartsWith("J", StringComparison.InvariantCultureIgnoreCase))
+	Console.WriteLine("A palavara começa com a letra J");
+```
 
 62. Qual a finalidade do método Equals?
 > Em C#, <strong>Equals(String, String)</strong> é um método String. É usado para determinar se dois objetos String têm ou não o mesmo valor. Basicamente, ele verifica a igualdade. Se ambas as strings têm o mesmo valor, ele retorna verdadeiro, caso contrário, retorna falso.
