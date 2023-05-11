@@ -360,6 +360,21 @@ if(filme.EndsWith("S", StringComparison.InvariantCultureIgnoreCase))
 
 62. Qual a finalidade do método Equals?
 > Em C#, <strong>Equals(String, String)</strong> é um método String. É usado para determinar se dois objetos String têm ou não o mesmo valor. Basicamente, ele verifica a igualdade. Se ambas as strings têm o mesmo valor, ele retorna verdadeiro, caso contrário, retorna falso.
+```
+// definindo e inicializando as variáveis
+string senhaQueUsuarioDigitou = "ABC123";
+string senhaArmazenadaNoBancoDeDados = "ABC123";
+
+// verificando se os valores são iguais
+if(senhaQueUsuarioDigitou.Equals(senhaArmazenadaNoBancoDeDados))
+{
+  Console.WriteLine("Acesso autorizado.");
+}
+else
+{
+  Console.WriteLine("Acesso negado!");
+}
+```
 
 63. Qual a finalidade do método IndexOf e LastIndexOf?
 > O método <strong>IndexOf()</strong> retorna o número de índice do primeiro caractere correspondente, enquanto que o método <strong>LastIndexOf()</strong> retorna o número de índice do último caractere correspondente.
