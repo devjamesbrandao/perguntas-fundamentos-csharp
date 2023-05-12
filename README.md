@@ -401,6 +401,11 @@ string filme = "Harry Potter e as relíquias da morte";
 string filmeEmMinusculo = filme.ToLower();
 
 Console.WriteLine(filmeEmMinusculo);
+
+// string convertida para maiúsculo
+string filmeEmMaiusculo = filme.ToUpper();
+
+Console.WriteLine(filmeEmMaiusculo);
 ```
 
 65. Qual a finalidade do método Insert?
