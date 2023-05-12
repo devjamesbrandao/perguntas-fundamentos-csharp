@@ -385,6 +385,10 @@ string anime = "Naruto";
 int index1 = anime.IndexOf('N');
 
 Console.WriteLine("O valor do index do caractere 'N' é " + index1);
+
+int index2 = anime.LastIndexOf('u');
+ 
+Console.WriteLine("O valor do index do último caractere 'u' é " + index2);
 ```
 
 64. Qual a finalidade do método ToLower e ToUpper?
