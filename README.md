@@ -378,6 +378,14 @@ else
 
 63. Qual a finalidade do método IndexOf e LastIndexOf?
 > O método <strong>IndexOf()</strong> retorna o número de índice do primeiro caractere correspondente, enquanto que o método <strong>LastIndexOf()</strong> retorna o número de índice do último caractere correspondente.
+```
+string anime = "Naruto";
+ 
+// encontrando o index do caractere
+int index1 = anime.IndexOf('N');
+
+Console.WriteLine("O valor do index do caractere 'N' é " + index1);
+```
 
 64. Qual a finalidade do método ToLower e ToUpper?
 > O método <strong>ToLower()</strong> coloca os caracteres de uma string ou char em caixa baixa. Já o método <strong>ToUpper</strong> colocar os caracteres de uma string ou char em caixa alta.
